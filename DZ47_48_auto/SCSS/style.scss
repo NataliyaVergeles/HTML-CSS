@@ -1,0 +1,173 @@
+
+$contBg:#ffffff;
+$contBtBg:#c62314;
+$contCl:#ffffff;
+@mixin flex($jc:flex-start,$ai:center){
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+@font-face {
+	font-family: 'Qt_Choc';
+	src: url('../fonts/Quite Chocolatey.eot');
+	src: local('☺'), url('../fonts/Quite Chocolatey.woff') format('woff'), 
+    url('../fonts/Quite Chocolatey.ttf') format('truetype'), 
+    url('../fonts/Quite Chocolatey.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Hairline'), 
+    local('Montserrat-Hairline'), url('../fonts/Montserrat/montserrathairline.woff2') format('woff2'),
+    url('../fonts/Montserrat/montserrathairline.woff') format('woff'), 
+    url('../fonts/Montserrat/montserrathairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+     url('../fonts/Montserrat/montserratlight.woff2') format('woff2'), 
+     url('../fonts/Montserrat/montserratlight.woff') format('woff'),
+      url('../fonts/Montserrat/montserratlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mon Reg';
+    src: local('Montserrat'), local('Montserrat-Regular'), 
+    url('../fonts/Montserrat/montserrat.woff2') format('woff2'), 
+    url('../fonts/Montserrat/montserrat.woff') format('woff'), 
+    url('../fonts/Montserrat/montserrat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mon Bold';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), 
+    url('../fonts/Montserrat/montserratbold.woff2') format('woff2'), 
+    url('../fonts/Montserrat/montserratbold.woff') format('woff'), 
+    url('../fonts/Montserrat/montserratbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Black'), local('Montserrat-Black'),
+     url('../fonts/Montserrat/montserratblack.woff2') format('woff2'), 
+     url('../fonts/Montserrat/montserratblack.woff') format('woff'),
+      url('../fonts/Montserrat/montserratblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+	font-family: Mon Reg;
+    background: $contBg;
+    color: $contCl;
+}
+a {
+	display: block;
+    text-decoration: none;
+    color: $contCl;
+}
+li {
+	list-style-type: none;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain; 
+	object-position: center;
+}
+.container{
+    max-width: 1900px;
+    margin: 50px;
+}
+.banner{
+    width: 1200px;
+    height: 685px;
+    position: relative;
+    padding: 60px 100px;
+    background:#c62314;
+    &__header{
+        height:45px;
+        @include flex();
+        margin-bottom: 155px;
+    }
+    &__post{
+        @include flex(flex-start, flex-start);
+        flex-direction:column;
+            &_up{
+            font-family: Mon Bold;
+            font-size: 90px;
+            color:#130e27;
+        }
+        &_down{
+            font-family: Mon Bold;
+            font-size: 90px;
+         }
+         &_text{
+             margin-top: 45px;
+             width: 50%;
+             flex-wrap: wrap;
+             font-size: 20px;
+             line-height: 1.5;
+            
+         }
+    }
+    &__request{
+        width: 400px;
+        height: 520px;
+        background: $contBg;
+        position: absolute;
+        top: 280px;
+        left: 700px;
+        box-shadow:15px 15px 15px -5px #d6d6d6;
+    }
+    
+}
+  
+.logo {
+        width: 265px;
+        font-family: Qt_Choc;
+        font-size: 88px;
+        margin-right: 225px;
+    }
+.menu {
+    @include flex();
+      margin-right: 30px;
+    }
+.menu:last-child{
+        margin-right: 0;
+    }
+.menu a{
+        @include flex();
+	    height:35px;
+	    padding:0 20px;
+    }
+.menu a:hover {
+        background:#130e27;
+    }
+.form-back{
+
+    &__title{
+        font-family: MOn Reg;
+        font-size: 22px;
+        text-align: center;
+        color:#130e27;
+        padding: 30px;
+    }
+}
+
+.services{
+    height: 600px;
+}
+
+
