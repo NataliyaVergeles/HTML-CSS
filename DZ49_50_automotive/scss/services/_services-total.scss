@@ -1,0 +1,38 @@
+.services{
+    font-family: PTSerif;
+    width: 100%;
+    background: $mainColor;
+    margin: 0 auto;
+    padding: 0 85px;
+    &__title{
+        padding-top: 40px;
+        font-size: 50px;
+        &_part1{
+            color:$firstColor;
+        }
+        &_part2{
+            color:$secondColor;
+        }
+    }
+    &__footer{
+        width: 100%;
+        @include flex(space-between, center);
+        color: $mainColor;
+        background: $secondColor;
+        padding: 20px 100px;
+        &_text{
+            width: 80%;
+            font-size: 20px;
+        }
+        &_button{
+            width: 240px;
+            background: $firstColor;
+            border: none;
+            cursor: pointer;
+            justify-content: center;
+            font-family: MontserratRegular;
+            font-size: 22px;
+            padding: 20px 0;
+        }
+    }
+}
