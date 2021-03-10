@@ -1,0 +1,21 @@
+.service{
+    @include flex(space-between, center);
+    font-family: PTSerif;
+    font-size: 20px;
+    text-align: center;
+    
+    &__item {
+        @include flex(center, center);
+        flex-direction:column;
+        padding-top: 40px;
+          &_img{
+            max-width: 165px;
+            max-height:155px;
+            padding: 20px;
+        }
+    }
+    &__item p{
+        font-family: PTSerif;
+        padding: 20px;
+    }
+}

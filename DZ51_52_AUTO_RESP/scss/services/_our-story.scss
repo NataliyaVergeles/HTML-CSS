@@ -1,0 +1,11 @@
+.our-story{
+    width: 100%;
+    @include flex(space-between, center);
+    color: $mainColor;
+    background: $secondColor;
+    padding: 20px 100px;
+    &_text{
+        width: 80%;
+        font-size: 20px;
+    }
+}

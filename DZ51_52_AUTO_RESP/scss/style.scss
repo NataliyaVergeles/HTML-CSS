@@ -1,0 +1,37 @@
+@import"./var";
+@import "./fonts";
+
+@import "./mixins";
+
+@import"./normalize";
+.wrapper{
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
+    &_posrel{
+        position: relative;
+        z-index:1;
+    }
+}
+ //общий стиль форм
+@import "./form";
+@import "./btns";
+
+//стили страниц
+@import "./header/header";
+
+@import"./header/hero";
+
+@import"./services/services-total";
+
+@import"./services/service-part";
+
+@import"./pricing/tarif-plans";
+
+@import"./about-us/about-us";
+
+@import"./about-us/review";
+
+@import"./about-us/gallery";
+
+@import"./footer/footer";

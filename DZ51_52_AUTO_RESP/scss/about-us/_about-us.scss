@@ -1,0 +1,21 @@
+.about-us{
+    @include flex(space-between, center);
+    text-align: center;
+    padding: 145px 100px;
+    &__testimonial{
+        width: 50%;
+        & h3{
+            font-size: 50px;
+            color: $secondColor;
+        }
+    }    
+    &__gallery{
+        width: 50%;
+        & h3{
+            padding-left: 65px;
+            font-size: 50px;
+            color: $firstColor;
+        }
+    }   
+
+}

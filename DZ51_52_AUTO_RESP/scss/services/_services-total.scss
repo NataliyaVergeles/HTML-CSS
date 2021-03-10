@@ -1,0 +1,19 @@
+.services{
+    font-family: PTSerif;
+    width: 100%;
+    background: $mainColor;
+    margin: 0 auto;
+       &__title{
+        padding-top: 40px;
+        font-size: 50px;
+            &_part1{
+                color:$firstColor;
+            }
+            &_part2{
+                color:$secondColor;
+            }
+         }
+    
+}
+
+@import"./our-story";

@@ -1,0 +1,48 @@
+.btn{
+        $btnWidth:240px;
+        $btnHeight:50px;
+        $btnPadding:0 20px;
+        $fontSize:20px;
+
+        
+        font-family: MontserratRegular;
+        color: $mainColor;
+        text-transform: uppercase;
+        
+        font-size: $fontSize;
+        width: $btnWidth;
+        height: $btnHeight;
+        padding: $btnPadding;
+        background: $firstColor;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.2s linear;
+        margin: 30px 0;
+        letter-spacing: 0.05em;
+        &_submit{
+            $btnWidth:350px;
+            $fontSize:20px;
+
+            width:$btnWidth;
+            font-size: $fontSize;
+        }
+        &_blue{
+            $btnWidth:200px;
+            $fontSize:22px;
+            background: $secondColor;
+           
+            width:$btnWidth;
+            font-size: $fontSize;
+        }
+        &_red{
+            $btnWidth:200px;
+            $fontSize:22px;
+            background: $firstColor;
+           
+            width:$btnWidth;
+            font-size: $fontSize;
+        }
+       
+}
