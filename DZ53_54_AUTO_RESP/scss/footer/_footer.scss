@@ -1,0 +1,41 @@
+.footer{
+    width: 100%;
+    background: $secondColor;
+    padding:70px 0;
+
+        @media (max-width: 900px) {
+            padding:40px 0;
+            text-align: center;
+        }
+        
+    &__rights{
+        font-size: 20px;
+        color:$mainColor;
+        @media (max-width: 1000px) {
+            font-size: 16px;
+        }
+        &_end {
+            color:$firstColor;
+        }
+        &_logo{
+            padding-left: 200px;
+            font-size: 65px;
+            color:$firstColor;
+            font-family: QuiteChocolatey;
+                @media (max-width: 1100px) {
+                    font-size: 65px;
+                    padding-left: 160px;
+                }
+
+                @media (max-width: 900px) {
+                padding-left: 90px;
+                font-size: 55px;
+                }
+                @media (max-width: 760px) {
+                    padding-left: 10px;
+                    font-size: 45px;
+                }
+        }
+    }
+
+}

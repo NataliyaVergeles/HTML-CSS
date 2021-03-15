@@ -1,0 +1,60 @@
+.about-us{
+    @include flex(space-between, center);
+    text-align: center;
+    padding: 145px 100px;
+    @media (max-width:960px){
+        padding: 100px 80px;
+    }
+   
+    &__testimonial{
+        width: 50%;
+        & h3{
+            font-size: 50px;
+            color: $secondColor;
+            
+        }
+    }    
+    &__gallery{
+        width: 50%;
+        & h3{
+            padding-left: 120px;
+            font-size: 50px;
+            color: $firstColor;
+            
+        }
+    }   
+
+}
+@media (max-width: 900px) {
+    .about-us{
+        display: block;
+        padding: 50px 80px;
+        &__testimonial{
+            width: 100%;
+            & h3{
+                font-size: 40px;
+            }
+    
+        }
+        &__gallery{
+            width: 100%;
+            & h3{
+                padding-left: 0;
+                font-size: 40px;
+            }
+        }   
+    }
+}
+@media (max-width:720px){
+    .about-us__testimonial
+        & h3{
+            font-size: 30px;
+        }
+    
+    .about-us__gallery{
+        & h3{
+            font-size: 30px;
+        }
+    }   
+        
+}

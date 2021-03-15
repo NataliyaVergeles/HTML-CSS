@@ -1,0 +1,74 @@
+.pricing{
+    background: $mainColorDark;
+    font-family:MontserratRegular;
+    color: $secondColor;
+    text-align: center;
+    padding: 0 100px;
+    @media(max-width:745px){
+        padding:0 15px;
+    }
+    &__title{
+        font-size: 50px;
+        padding:60px 0;
+    }
+    &__tarifs{
+        @include flex(space-between, center);
+    }
+}
+.tarif{
+    width: 30%;
+    background: $mainColor;
+    padding: 35px 0;
+        @media(max-width:900px){
+            padding: 15px 0;
+        }
+    & h5{
+        font-size: 20px;
+        padding-bottom: 40px;
+        @media(max-width:900px){
+            padding-bottom: 20px;
+        }
+    }
+    & h3{
+        font-size: 60px;
+        color: $firstColor;
+        padding-bottom: 30px;
+        @media(max-width: 900px){
+            font-size: 50px;
+        }
+    }
+    
+    &__opcion{
+        list-style-type:none;
+        font-size: 20px;
+        line-height:1.5;
+        padding-bottom: 30px;
+        @media(max-width:900px){
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        @media(max-width:745px){
+            line-height:1;
+        }
+    }
+    &__sign{
+        width: 200px;
+        padding:15px;
+        background: $secondColor;
+        color:$mainColor;
+        font-size: 22px;
+        &_popular{
+            background: $firstColor;
+        }
+    }
+    
+}
+@media(max-width:900px){
+    .pricing{
+        &__title{
+            font-size: 40px;
+            padding:30px 0;
+        }
+
+    }
+}

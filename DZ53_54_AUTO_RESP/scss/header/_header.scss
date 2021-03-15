@@ -1,0 +1,111 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.head {
+    @include flex(space-between, center);
+    padding: 45px 0;
+
+    &__logo {
+        font-size: 88px;
+        font-family: QuiteChocolatey;
+        color: #fff;
+    }
+    &__toggle-menu {
+        $lineWidth: 30px;
+        $lineHeight: 3px;
+        $lineMargin: 5px;
+        $lineColor: $secondColor;
+        display: none;
+        &::before, &::after {
+            content: '';
+            display: block;
+            width: $lineWidth;
+            height: $lineHeight;
+            background: $lineColor;
+        }
+        span {
+            display: block;
+            width: $lineWidth;
+            height: $lineHeight;
+            margin: $lineMargin 0;
+            background: $lineColor;
+        }
+    }
+
+    &__menu-items {
+        @include flex();
+        align-items: center;
+    }
+    &__menu-items li {
+        text-transform: uppercase;
+        padding-left: 15px;
+               
+    }
+    &__menu-items li a {
+        text-decoration: none;
+        color: $secondColor;
+        font-size: 18px;
+        font-family: MontserratRegular;
+            
+    }
+    .active {
+        padding: 10px 15px;
+        background-color:$secondColor;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+@media (max-width: 900px) {
+    .head {
+        &__menu {
+            position: relative;
+            &:hover {
+                .head__menu-items {
+                    z-index: 1;
+                    visibility: visible;
+                    transform: scale(1);
+                }
+            }
+        }
+        &__toggle-menu {
+            display: block;
+            
+        }
+        &__menu-items {
+            display: block;
+            //transform: scale(0);
+            transition: transform .3s;
+            position: absolute;
+            background: $mainColorDark;
+            top: 20px;
+            right: 0;
+            width: 300px;
+            border-radius: 5px;
+            padding: 15px;
+            //z-index: -1;
+           // visibility: hidden;
+        }
+        &__menu-items li {
+            padding-left: 0;
+        }
+        &__menu-items li a {
+            padding: 15px;
+        }
+        .active {
+            padding: 15px;
+        }
+    }
+}
+@media (max-width: 780px) {
+    .head {
+        &__menu-items {
+            width: 250px;
+        }
+    }
+
+}

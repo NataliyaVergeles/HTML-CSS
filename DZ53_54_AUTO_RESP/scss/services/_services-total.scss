@@ -1,0 +1,28 @@
+.services{
+    font-family: PTSerif;
+    width: 100%;
+    background: $mainColor;
+    margin: 0 auto;
+       &__title{
+        padding-top: 40px;
+        font-size: 50px;
+            &_part1{
+                color:$firstColor;
+            }
+            &_part2{
+                color:$secondColor;
+            }
+         }
+    
+}
+@media (max-width: 900px) {
+    .services{
+        &__title{
+            padding-top: 40px;
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+}
+
+@import"./our-story";

@@ -1,0 +1,53 @@
+.service{
+    @include flex(space-between, center);
+    font-family: PTSerif;
+    font-size: 20px;
+    text-align: center;
+    
+    &__item {
+        @include flex(center, center);
+        flex-direction:column;
+        padding-top: 40px;
+          &_img{
+            max-width: 165px;
+            max-height:155px;
+            padding: 20px;
+        }
+    }
+    &__item p{
+        font-family: PTSerif;
+        padding: 20px;
+    }
+}
+@media (max-width: 900px) {
+    .service{
+        
+        &__item {
+            margin: 0 30px;
+            &_img{
+                padding: 0;
+            }
+        }
+        &__item p{
+           font-size: 16px;
+        }
+        
+    }
+}
+@media (max-width: 700px) {
+    .service{
+        flex-wrap: wrap;
+        justify-content: center;
+        &__item {
+            
+            &_img{
+                width: 100px;
+                height: auto;
+            }
+        }
+        &__item p{
+           font-size: 14px;
+        }
+        
+    }
+}
