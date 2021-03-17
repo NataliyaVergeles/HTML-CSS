@@ -20,8 +20,16 @@
         padding-right: 90px;
         }
         @media(max-width: 655px){
+            padding-left: 55px;
+            padding-right: 55px;
+        }
+        @media(max-width:500px){
             padding-left: 40px;
             padding-right: 40px;
+        }
+        @media (max-width:325px){
+            padding-left: 15px;
+            padding-right: 15px;
         }
     &__pict{
         width: calc(100% / 3);
@@ -44,8 +52,5 @@
         }
         
     }
-
-}
-@media(max-width:780px){
 
 }

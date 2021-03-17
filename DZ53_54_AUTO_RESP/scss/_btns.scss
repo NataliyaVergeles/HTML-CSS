@@ -21,10 +21,52 @@
         transition: all 0.2s linear;
         margin: 30px 0;
         letter-spacing: 0.05em;
-        @media(max-width:745px){
-            &:last-child{
-                margin: 0;
+    &_story{
+            @media(max-width:745px){
+                &:last-child{
+                    margin: 0;
+                }
             }
+             
+            
+            @media(max-width:500px){
+                &:last-child{
+                    margin-left: 100px;
+                }
+            }
+            @media(max-width:480px){
+                    &:last-child{
+                        margin-left: 80px;
+                    }
+            }
+            @media(max-width:440px){
+                &:last-child{
+                    margin-left: 60px;
+                }
+            }
+            @media(max-width:410px){
+                &:last-child{
+                    $btnWidth:150px;
+                    $btnHeight:40px;
+                    $btnPadding:0 15px;
+                    $fontSize:16px;
+                
+                    font-size: $fontSize;
+                    width: $btnWidth;
+                    height: $btnHeight;
+                    padding: $btnPadding;
+                    margin-left:80px;
+                   
+                }
+            }
+           
+            @media(max-width:350px){
+                &:last-child{
+                margin-left:70px;
+                }   
+            }  
+
+
         }
         &_submit{
             $btnWidth:350px;
@@ -41,24 +83,50 @@
             $btnWidth:200px;
             $fontSize:22px;
             background: $secondColor;
-            @media(max-width: 900px){
+                @media(max-width: 900px){
                 $btnWidth:160px;
-            }
+                }
+                @media(max-width: 600px){
+                    $btnWidth:110px;
+                    $fontSize:14px;
+                }
+                @media (max-width:420px){
+                    margin: 10px 0;
+                    $btnWidth:100px;
+                }
+                @media (max-width:380px){
+                    $btnWidth:80px;
+                }
+                
            
             width:$btnWidth;
             font-size: $fontSize;
-
+    
+         
         }
+            
         &_red{
             $btnWidth:200px;
             $fontSize:22px;
             background: $firstColor;
-            @media(max-width: 900px){
-                $btnWidth:160px;
-            }
+                @media(max-width: 900px){
+                        $btnWidth:160px;
+                    }
+                @media(max-width: 600px){
+                        $btnWidth:110px;
+                        $fontSize:14px;
+                    }
+                @media (max-width:420px){
+                        margin: 10px 0;
+                        $btnWidth:100px;
+                    }
+                    @media (max-width:380px){
+                        $btnWidth:80px;
+                    }
 
-            width:$btnWidth;
-            font-size: $fontSize;
+                width:$btnWidth;
+                font-size: $fontSize;
+                
         }
        
 }

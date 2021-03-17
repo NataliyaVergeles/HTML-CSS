@@ -7,6 +7,9 @@
             padding:40px 0;
             text-align: center;
         }
+        @media(max-width:500px){
+            padding: 20px 0;
+        }
         
     &__rights{
         font-size: 20px;

@@ -4,9 +4,16 @@
     color: $mainColor;
     background: $secondColor;
     padding: 20px 100px;
+    @media(max-width:500px){
+        display: block;
+    }
     &_text{
         width: 80%;
         font-size: 20px;
+            @media(max-width:500px){
+                width: auto;
+                font-size: 14px;
+            }
     }
 }
 
@@ -20,5 +27,10 @@
         &_text{
             font-size: 16px;
         }
+    }
+}
+@media (max-width: 900px) {
+    .our-story {
+    padding: 15px 15px;
     }
 }
